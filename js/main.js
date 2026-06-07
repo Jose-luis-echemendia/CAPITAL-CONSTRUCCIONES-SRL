@@ -48,3 +48,40 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 console.log("Landing page Capital Construcciones - servicios integrales en construcción y mantenimiento.");
+
+(function() {
+    const track = document.querySelector('.carousel-track');
+    if (!track) return;
+    const slides = track.querySelectorAll('.carousel-slide');
+    const dotsContainer = document.querySelector('.carousel-dots');
+    let current = 0;
+    let timer;
+
+    slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Valor ' + (i + 1));
+        dot.addEventListener('click', () => goTo(i));
+        dotsContainer.appendChild(dot);
+    });
+
+    const dots = dotsContainer.querySelectorAll('.dot');
+
+    function goTo(index) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = (index + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+    }
+
+    document.querySelector('.carousel-btn.prev')?.addEventListener('click', () => { goTo(current - 1); resetTimer(); });
+    document.querySelector('.carousel-btn.next')?.addEventListener('click', () => { goTo(current + 1); resetTimer(); });
+
+    function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(() => goTo(current + 1), 5000);
+    }
+
+    timer = setInterval(() => goTo(current + 1), 5000);
+})();

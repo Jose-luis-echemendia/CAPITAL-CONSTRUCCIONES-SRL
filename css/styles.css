@@ -477,6 +477,91 @@ footer {
     margin: 8px 0;
 }
 
+.values-carousel {
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.carousel-track {
+    position: relative;
+    min-height: 160px;
+}
+
+.carousel-slide {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.carousel-slide h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #121041;
+    margin-bottom: 0.4rem;
+}
+
+.carousel-slide p {
+    font-size: 0.9rem;
+    color: #39385e;
+    line-height: 1.5;
+}
+
+.carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 1rem;
+}
+
+.carousel-btn {
+    background: #2a3f93;
+    border: none;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    font-size: 0.8rem;
+}
+
+.carousel-btn:hover {
+    background: #121041;
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.carousel-dots .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #c5c5cd;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    padding: 0;
+}
+
+.carousel-dots .dot.active {
+    background: #2a3f93;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
