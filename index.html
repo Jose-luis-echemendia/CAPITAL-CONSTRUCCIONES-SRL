@@ -3,388 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Capital Construcciones SRL | Ingeniería y Mantenimiento en Cuba</title>
-    <!-- Google Fonts + Font Awesome 6 -->
+    <title>Capital Construcciones SRL | Ingeniería, Construcción y Mantenimiento en Cuba</title>
+    
+    <meta name="description" content="Capital Construcciones SRL: empresa cubana especializada en construcción, rehabilitación, mantenimiento de edificaciones, instalaciones eléctricas, paneles solares y climatización. Presupuesto sin compromiso.">
+    <meta name="keywords" content="construcción Cuba, mantenimiento edificaciones, rehabilitación, instalaciones eléctricas, paneles solares, climatización, aire acondicionado, Capital Construcciones, La Habana, ingeniería civil">
+    <meta name="author" content="Capital Construcciones SRL">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://capitalconstrucciones.cu/">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Capital Construcciones SRL | Ingeniería y Mantenimiento en Cuba">
+    <meta property="og:description" content="Soluciones integrales en construcción, rehabilitación y mantenimiento. Reducimos costos y plazos con calidad garantizada.">
+    <meta property="og:url" content="https://capitalconstrucciones.cu/">
+    <meta property="og:site_name" content="Capital Construcciones SRL">
+    <meta property="og:locale" content="es_CU">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Capital Construcciones SRL | Ingeniería y Mantenimiento en Cuba">
+    <meta name="twitter:description" content="Soluciones integrales en construcción, rehabilitación y mantenimiento en Cuba. Presupuesto sin compromiso.">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Capital Construcciones SRL",
+        "description": "Empresa especializada en construcción, rehabilitación y mantenimiento de edificaciones en Cuba.",
+        "url": "https://capitalconstrucciones.cu/",
+        "telephone": "+5353970368",
+        "email": "capitalconstrucciones@src.cu",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Calle M, No: 104A Apartamento 2, entre Línea y 13, Vedado Plaza",
+            "addressLocality": "La Habana",
+            "addressCountry": "CU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "23.1365",
+            "longitude": "-82.3817"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+        },
+        "priceRange": "$$",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Cuba"
+        },
+        "serviceType": [
+            "Construcción",
+            "Mantenimiento de edificaciones",
+            "Instalaciones eléctricas",
+            "Paneles solares",
+            "Climatización",
+            "Rehabilitación"
+        ]
+    }
+    </script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #fefcf7;
-            color: #1e2a2f;
-            line-height: 1.5;
-            scroll-behavior: smooth;
-        }
-
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        /* Header / Nav */
-        header {
-            background-color: #ffffff;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.03);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(2px);
-            background: rgba(255,255,245,0.96);
-            border-bottom: 1px solid #e9e5dc;
-        }
-
-        .navbar {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-            gap: 16px;
-        }
-
-        .logo h1 {
-            font-size: 1.6rem;
-            font-weight: 700;
-            letter-spacing: -0.3px;
-            color: #b45f2b;
-        }
-        .logo span {
-            font-weight: 500;
-            font-size: 0.85rem;
-            color: #4a6a6f;
-            display: block;
-        }
-        .nav-links {
-            display: flex;
-            gap: 32px;
-            align-items: center;
-        }
-        .nav-links a {
-            text-decoration: none;
-            font-weight: 500;
-            color: #2c4a4f;
-            transition: 0.2s;
-            font-size: 0.95rem;
-        }
-        .nav-links a:hover {
-            color: #c46e2e;
-        }
-        .btn-call {
-            background-color: #b45f2b;
-            padding: 8px 18px;
-            border-radius: 40px;
-            color: white !important;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .btn-call i {
-            font-size: 1rem;
-        }
-        .btn-call:hover {
-            background-color: #964b1e;
-            transform: scale(0.97);
-        }
-
-        /* Hero */
-        .hero {
-            background: linear-gradient(105deg, #f5efe7 0%, #e8dfd3 100%);
-            border-radius: 0 0 48px 48px;
-            padding: 3rem 0 4rem 0;
-            margin-bottom: 3rem;
-        }
-        .hero-grid {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            gap: 2rem;
-        }
-        .hero-text {
-            flex: 1.2;
-        }
-        .hero-text .badge {
-            background: #b45f2b20;
-            color: #b45f2b;
-            font-weight: 600;
-            font-size: 0.8rem;
-            padding: 6px 14px;
-            border-radius: 30px;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-        .hero-text h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            line-height: 1.2;
-            color: #1f3e3f;
-            margin-bottom: 1rem;
-        }
-        .hero-text p {
-            font-size: 1.1rem;
-            color: #3e5a5f;
-            margin-bottom: 1.8rem;
-            max-width: 90%;
-        }
-        .hero-buttons {
-            display: flex;
-            gap: 18px;
-            flex-wrap: wrap;
-        }
-        .btn-primary {
-            background-color: #b45f2b;
-            border: none;
-            padding: 12px 28px;
-            border-radius: 40px;
-            font-weight: 600;
-            color: white;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-size: 1rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .btn-outline {
-            background: transparent;
-            border: 1.5px solid #b45f2b;
-            padding: 10px 26px;
-            border-radius: 40px;
-            font-weight: 600;
-            color: #b45f2b;
-            transition: 0.2s;
-        }
-        .btn-outline:hover {
-            background: #b45f2b10;
-        }
-        .hero-stats {
-            flex: 0.9;
-            background: rgba(255,255,245,0.7);
-            backdrop-filter: blur(8px);
-            padding: 1.8rem;
-            border-radius: 36px;
-            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.1);
-        }
-        .hero-stats i {
-            font-size: 1.8rem;
-            color: #b45f2b;
-            margin-bottom: 10px;
-        }
-
-        /* Sections */
-        section {
-            padding: 4rem 0;
-        }
-        .section-title {
-            font-size: 2rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 2rem;
-            color: #1f3e3f;
-            position: relative;
-        }
-        .section-title:after {
-            content: '';
-            display: block;
-            width: 70px;
-            height: 4px;
-            background: #b45f2b;
-            margin: 12px auto 0;
-            border-radius: 4px;
-        }
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 1rem;
-        }
-        .service-card {
-            background: white;
-            padding: 1.8rem;
-            border-radius: 28px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.02);
-            transition: all 0.25s ease;
-            border: 1px solid #ede6db;
-        }
-        .service-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 24px 36px -12px rgba(0,0,0,0.1);
-            border-color: #e2d2c0;
-        }
-        .service-card i {
-            font-size: 2.4rem;
-            color: #b45f2b;
-            margin-bottom: 1.2rem;
-        }
-        .service-card h3 {
-            font-size: 1.45rem;
-            font-weight: 700;
-            margin-bottom: 0.75rem;
-        }
-        .service-card p, .service-card ul {
-            color: #3f555b;
-            font-size: 0.95rem;
-        }
-        .service-card ul {
-            margin-top: 10px;
-            padding-left: 1.2rem;
-        }
-        .service-card li {
-            margin: 6px 0;
-        }
-
-        /* tabla de precios (muestra) */
-        .price-showcase {
-            background: #f6f2ea;
-            border-radius: 36px;
-            padding: 2rem;
-            margin-top: 1rem;
-        }
-        .table-wrapper {
-            overflow-x: auto;
-            margin: 1.5rem 0;
-        }
-        .price-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.9rem;
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-        }
-        .price-table th {
-            background-color: #1f3e3f;
-            color: white;
-            padding: 12px 12px;
-            text-align: left;
-        }
-        .price-table td {
-            padding: 12px 12px;
-            border-bottom: 1px solid #e9e0d4;
-        }
-        .price-table tr:last-child td {
-            border: none;
-        }
-        .note-small {
-            font-size: 0.8rem;
-            color: #6f6a5e;
-            margin-top: 1rem;
-            border-left: 3px solid #b45f2b;
-            padding-left: 1rem;
-        }
-
-        /* adulto mayor */
-        .elder-section {
-            background: linear-gradient(120deg, #e7dfd3 0%, #f2ece2 100%);
-            border-radius: 48px;
-            padding: 2.5rem;
-            margin: 2rem 0;
-        }
-        .flex-elder {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            align-items: center;
-        }
-        .elder-content {
-            flex: 2;
-        }
-        .elder-content h3 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 0.75rem;
-        }
-        .elder-badge {
-            background-color: #b45f2b;
-            display: inline-block;
-            padding: 6px 16px;
-            border-radius: 60px;
-            color: white;
-            font-weight: 600;
-            font-size: 0.8rem;
-            margin-bottom: 1rem;
-        }
-
-        /* contacto */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            background: white;
-            border-radius: 32px;
-            padding: 2rem;
-            box-shadow: 0 12px 28px rgba(0,0,0,0.05);
-        }
-        .contact-info i {
-            width: 36px;
-            color: #b45f2b;
-            font-size: 1.3rem;
-        }
-        .contact-info p {
-            margin: 1rem 0;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 12px 16px;
-            border: 1px solid #ddd3c8;
-            border-radius: 24px;
-            margin-bottom: 1rem;
-            font-family: inherit;
-            background: #fefaf5;
-        }
-        form button {
-            background: #b45f2b;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 40px;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        footer {
-            background: #1f2e2b;
-            color: #cfcfc4;
-            padding: 2rem 0;
-            text-align: center;
-            margin-top: 2rem;
-        }
-        @media (max-width: 780px) {
-            .hero-text h1 { font-size: 2.2rem; }
-            .contact-grid { grid-template-columns: 1fr; }
-            .navbar { flex-direction: column; }
-            .nav-links { flex-wrap: wrap; justify-content: center; }
-            .hero-buttons { justify-content: center; }
-            .hero-text p { max-width: 100%; }
-        }
-        .whatsapp-float {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            background: #25D366;
-            color: white;
-            border-radius: 50px;
-            padding: 12px 18px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-weight: bold;
-            box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-            text-decoration: none;
-            z-index: 99;
-            font-size: 0.9rem;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -394,18 +76,17 @@
             <h1>CAPITAL CONSTRUCCIONES <span>SRL</span></h1>
             <span>Ingeniería · Mantenimiento · Confianza</span>
         </div>
-        <div class="nav-links">
+        <nav class="nav-links" aria-label="Navegación principal">
             <a href="#servicios">Servicios</a>
             <a href="#precios">Referencias</a>
             <a href="#contacto">Contacto</a>
             <a href="#adultos" class="btn-call"><i class="fas fa-heart"></i> Adultos Mayores</a>
-        </div>
+        </nav>
     </div>
 </header>
 
 <main>
-    <!-- Hero Section -->
-    <div class="hero">
+    <section class="hero" aria-label="Presentación principal">
         <div class="container hero-grid">
             <div class="hero-text">
                 <div class="badge"><i class="fas fa-hard-hat"></i>  Ejecución + calidad + confianza</div>
@@ -426,42 +107,40 @@
                 <p>Instalaciones eléctricas, paneles solares y climatización</p>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="container" id="servicios">
-        <!-- Servicios principales -->
-        <section>
+        <section aria-label="Servicios principales">
             <h2 class="section-title">Nuestra experiencia a tu servicio</h2>
             <div class="cards-grid">
-                <div class="service-card">
+                <article class="service-card">
                     <i class="fas fa-drafting-compass"></i>
                     <h3>Ejecución de proyectos</h3>
                     <p>Asesoramiento técnico, gestión constructiva, conservación y rehabilitación de edificaciones. Aseguramos óptima calidad de terminaciones y cumplimiento de cronogramas.</p>
                     <ul><li>✓ Obra civil integral</li><li>✓ Representación ante entidades</li><li>✓ Eficiencia en recursos</li></ul>
-                </div>
-                <div class="service-card">
+                </article>
+                <article class="service-card">
                     <i class="fas fa-bolt"></i>
                     <h3>Instalaciones eléctricas & solares</h3>
                     <p>Preventivo y correctivo, tableros, cableado, aterramiento, y paneles solares a medida. Maximizamos productividad y reducimos paradas imprevistas.</p>
                     <ul><li>✓ Mantenimiento de inmuebles</li><li>✓ Paneles solares llave en mano</li><li>✓ Diagnóstico profesional</li></ul>
-                </div>
-                <div class="service-card">
+                </article>
+                <article class="service-card">
                     <i class="fas fa-wind"></i>
                     <h3>Climatización (A/A)</h3>
                     <p>Montaje y mantenimiento de splits, equipos de ventana, sistemas centrales. Incrementamos vida útil de sus equipos y reducimos costos de reparación.</p>
                     <ul><li>✓ Carga de refrigerante</li><li>✓ Reparación de fugas</li><li>✓ Instalación profesional</li></ul>
-                </div>
-                <div class="service-card">
+                </article>
+                <article class="service-card">
                     <i class="fas fa-hand-holding-heart"></i>
                     <h3>Mantenimiento residencial avanzado</h3>
                     <p>Rehabilitación de viviendas, terminaciones, impermeabilización, carpintería, pintura, y remodelaciones con altos estándares.</p>
                     <ul><li>✓ Enchapes, pisos, repellos</li><li>✓ Instalaciones hidrosanitarias</li><li>✓ Seguimiento post-obra</li></ul>
-                </div>
+                </article>
             </div>
         </section>
 
-        <!-- Programa adultos mayores (destacado) -->
-        <div id="adultos" class="elder-section">
+        <section id="adultos" class="elder-section" aria-label="Programa para adultos mayores">
             <div class="flex-elder">
                 <div class="elder-content">
                     <div class="elder-badge"><i class="fas fa-user-shield"></i> Atención especializada</div>
@@ -478,10 +157,9 @@
                     <p style="margin-top:12px;">+ confianza, acompañamiento profesional</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Precios de referencia (según listado técnico) -->
-        <section id="precios">
+        <section id="precios" aria-label="Precios de referencia">
             <h2 class="section-title">Transparencia presupuestaria</h2>
             <p style="text-align: center; margin-bottom: 1rem;">Tarifas de mano de obra por unidad (materiales no incluidos). Basados en nuestro <strong>PRESUPUESTO POR ÍNDICES GLOBALES</strong> — ajustamos cada proyecto a sus necesidades.</p>
             <div class="price-showcase">
@@ -514,29 +192,27 @@
             <p style="text-align: center; margin-top: 2rem;">¿Necesitas un presupuesto completo? <strong>Nuestro equipo prepara listado de materiales y cronograma sin compromiso</strong></p>
         </section>
 
-        <!-- Beneficios y diferenciadores -->
-        <section>
+        <section aria-label="Beneficios y diferenciadores">
             <div class="cards-grid">
-                <div class="service-card" style="background:#fff8f0;">
+                <article class="service-card" style="background:#fff8f0;">
                     <i class="fas fa-chart-simple"></i>
                     <h3>Optimización de recursos</h3>
                     <p>Reducimos tiempos muertos y costos mediante planificación eficiente, manteniendo los estándares de calidad en cada ejecución.</p>
-                </div>
-                <div class="service-card" style="background:#fff8f0;">
+                </article>
+                <article class="service-card" style="background:#fff8f0;">
                     <i class="fas fa-clipboard-list"></i>
                     <h3>Preparación técnica integral</h3>
                     <p>Presupuesto, listado de materiales, memoria descriptiva. Representación ante entidades y dirección técnica durante toda la obra.</p>
-                </div>
-                <div class="service-card" style="background:#fff8f0;">
+                </article>
+                <article class="service-card" style="background:#fff8f0;">
                     <i class="fas fa-hand-sparkles"></i>
                     <h3>Calidad en terminaciones</h3>
                     <p>Enchapes, carpintería, pintura profesional, instalaciones eléctricas confiables, todo ejecutado bajo normas cubanas.</p>
-                </div>
+                </article>
             </div>
         </section>
 
-        <!-- Contacto / Cotización -->
-        <section id="contacto">
+        <section id="contacto" aria-label="Formulario de contacto">
             <h2 class="section-title">Solicita asesoría o presupuesto</h2>
             <div class="contact-grid">
                 <div class="contact-info">
@@ -572,45 +248,10 @@
     </div>
 </footer>
 
-<!-- WhatsApp flotante -->
-<a href="https://wa.me/5353970368?text=Hola%20Capital%20Construcciones%2C%20necesito%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20construcci%C3%B3n%20y%20mantenimiento." class="whatsapp-float" target="_blank">
+<a href="https://wa.me/5353970368?text=Hola%20Capital%20Construcciones%2C%20necesito%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20construcci%C3%B3n%20y%20mantenimiento." class="whatsapp-float" target="_blank" aria-label="Consulta por WhatsApp">
     <i class="fab fa-whatsapp"></i> Consulta por WhatsApp
 </a>
 
-<script>
-    // Formulario interactivo (simulación de envío)
-    const form = document.getElementById('contactForm');
-    if(form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const nombre = document.getElementById('nombre')?.value.trim();
-            const email = document.getElementById('email')?.value.trim();
-            const mensaje = document.getElementById('mensaje')?.value.trim();
-            if(!nombre || !email) {
-                alert('Por favor, completa tu nombre y correo electrónico.');
-                return;
-            }
-            // Simulación de envío exitoso
-            alert(`¡Gracias ${nombre}! Hemos recibido tu mensaje. En breve un asesor de Capital Construcciones SRL se comunicará contigo.`);
-            form.reset();
-        });
-    }
-
-    // smooth scroll para links internos
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if(href === "#" || href === "") return;
-            const target = document.querySelector(href);
-            if(target) {
-                e.preventDefault();
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        });
-    });
-    
-    // pequeña interacción con el hero
-    console.log("Landing page Capital Construcciones - servicios integrales en construcción y mantenimiento.");
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>
