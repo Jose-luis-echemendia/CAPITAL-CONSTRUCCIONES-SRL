@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #fefcf7;
-    color: #1e2a2f;
+    background-color: #f8f8fc;
+    color: #121041;
     line-height: 1.5;
     scroll-behavior: smooth;
 }
@@ -25,8 +25,8 @@ header {
     top: 0;
     z-index: 100;
     backdrop-filter: blur(2px);
-    background: rgba(255,255,245,0.96);
-    border-bottom: 1px solid #e9e5dc;
+    background: rgba(248,248,252,0.96);
+    border-bottom: 1px solid #d0d0e0;
 }
 
 .navbar {
@@ -53,13 +53,13 @@ header {
     font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: -0.3px;
-    color: #b45f2b;
+    color: #2a3f93;
 }
 
 .logo span {
     font-weight: 500;
     font-size: 0.85rem;
-    color: #4a6a6f;
+    color: #7f8cbe;
     display: block;
 }
 
@@ -72,17 +72,17 @@ header {
 .nav-links a {
     text-decoration: none;
     font-weight: 500;
-    color: #2c4a4f;
+    color: #121041;
     transition: 0.2s;
     font-size: 0.95rem;
 }
 
 .nav-links a:hover {
-    color: #c46e2e;
+    color: #2a3f93;
 }
 
 .btn-call {
-    background-color: #b45f2b;
+    background-color: #2a3f93;
     padding: 8px 18px;
     border-radius: 40px;
     color: white !important;
@@ -97,12 +97,12 @@ header {
 }
 
 .btn-call:hover {
-    background-color: #964b1e;
+    background-color: #121041;
     transform: scale(0.97);
 }
 
 .hero {
-    background: linear-gradient(105deg, #f5efe7 0%, #e8dfd3 100%);
+    background: linear-gradient(105deg, #e8e8f5 0%, #d0d0e8 100%);
     border-radius: 0 0 48px 48px;
     padding: 3rem 0 4rem 0;
     margin-bottom: 3rem;
@@ -121,8 +121,8 @@ header {
 }
 
 .hero-text .badge {
-    background: #b45f2b20;
-    color: #b45f2b;
+    background: #2a3f9320;
+    color: #2a3f93;
     font-weight: 600;
     font-size: 0.8rem;
     padding: 6px 14px;
@@ -135,13 +135,13 @@ header {
     font-size: 3rem;
     font-weight: 800;
     line-height: 1.2;
-    color: #1f3e3f;
+    color: #121041;
     margin-bottom: 1rem;
 }
 
 .hero-text p {
     font-size: 1.1rem;
-    color: #3e5a5f;
+    color: #39385e;
     margin-bottom: 1.8rem;
     max-width: 90%;
 }
@@ -153,7 +153,7 @@ header {
 }
 
 .btn-primary {
-    background-color: #b45f2b;
+    background-color: #2a3f93;
     border: none;
     padding: 12px 28px;
     border-radius: 40px;
@@ -165,25 +165,31 @@ header {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #121041;
 }
 
 .btn-outline {
     background: transparent;
-    border: 1.5px solid #b45f2b;
+    border: 1.5px solid #2a3f93;
     padding: 10px 26px;
     border-radius: 40px;
     font-weight: 600;
-    color: #b45f2b;
+    color: #2a3f93;
     transition: 0.2s;
+    text-decoration: none;
 }
 
 .btn-outline:hover {
-    background: #b45f2b10;
+    background: #2a3f9310;
 }
 
 .hero-stats {
     flex: 0.9;
-    background: rgba(255,255,245,0.7);
+    background: rgba(248,248,252,0.7);
     backdrop-filter: blur(8px);
     padding: 1.8rem;
     border-radius: 36px;
@@ -192,7 +198,7 @@ header {
 
 .hero-stats i {
     font-size: 1.8rem;
-    color: #b45f2b;
+    color: #2a3f93;
     margin-bottom: 10px;
 }
 
@@ -205,7 +211,7 @@ section {
     font-weight: 700;
     text-align: center;
     margin-bottom: 2rem;
-    color: #1f3e3f;
+    color: #121041;
     position: relative;
 }
 
@@ -214,7 +220,7 @@ section {
     display: block;
     width: 70px;
     height: 4px;
-    background: #b45f2b;
+    background: #2a3f93;
     margin: 12px auto 0;
     border-radius: 4px;
 }
@@ -232,18 +238,18 @@ section {
     border-radius: 28px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.02);
     transition: all 0.25s ease;
-    border: 1px solid #ede6db;
+    border: 1px solid #d8d8e8;
 }
 
 .service-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 24px 36px -12px rgba(0,0,0,0.1);
-    border-color: #e2d2c0;
+    border-color: #7f8cbe;
 }
 
 .service-card i {
     font-size: 2.4rem;
-    color: #b45f2b;
+    color: #2a3f93;
     margin-bottom: 1.2rem;
 }
 
@@ -251,10 +257,11 @@ section {
     font-size: 1.45rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
+    color: #121041;
 }
 
 .service-card p, .service-card ul {
-    color: #3f555b;
+    color: #39385e;
     font-size: 0.95rem;
 }
 
@@ -268,7 +275,7 @@ section {
 }
 
 .price-showcase {
-    background: #f6f2ea;
+    background: #eeeeF5;
     border-radius: 36px;
     padding: 2rem;
     margin-top: 1rem;
@@ -289,7 +296,7 @@ section {
 }
 
 .price-table th {
-    background-color: #1f3e3f;
+    background-color: #121041;
     color: white;
     padding: 12px 12px;
     text-align: left;
@@ -297,7 +304,7 @@ section {
 
 .price-table td {
     padding: 12px 12px;
-    border-bottom: 1px solid #e9e0d4;
+    border-bottom: 1px solid #d0d0e0;
 }
 
 .price-table tr:last-child td {
@@ -306,14 +313,14 @@ section {
 
 .note-small {
     font-size: 0.8rem;
-    color: #6f6a5e;
+    color: #71708d;
     margin-top: 1rem;
-    border-left: 3px solid #b45f2b;
+    border-left: 3px solid #2a3f93;
     padding-left: 1rem;
 }
 
 .elder-section {
-    background: linear-gradient(120deg, #e7dfd3 0%, #f2ece2 100%);
+    background: linear-gradient(120deg, #d8d8e8 0%, #eeeeF5 100%);
     border-radius: 48px;
     padding: 2.5rem;
     margin: 2rem 0;
@@ -334,10 +341,11 @@ section {
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
+    color: #121041;
 }
 
 .elder-badge {
-    background-color: #b45f2b;
+    background-color: #2a3f93;
     display: inline-block;
     padding: 6px 16px;
     border-radius: 60px;
@@ -359,7 +367,7 @@ section {
 
 .contact-info i {
     width: 36px;
-    color: #b45f2b;
+    color: #2a3f93;
     font-size: 1.3rem;
 }
 
@@ -368,31 +376,52 @@ section {
     display: flex;
     align-items: center;
     gap: 12px;
+    color: #39385e;
+}
+
+.contact-info a {
+    color: #2a3f93;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
 
 form input, form textarea {
     width: 100%;
     padding: 12px 16px;
-    border: 1px solid #ddd3c8;
+    border: 1px solid #c5c5cd;
     border-radius: 24px;
     margin-bottom: 1rem;
     font-family: inherit;
-    background: #fefaf5;
+    background: #f8f8fc;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #2a3f93;
+    box-shadow: 0 0 0 3px #2a3f9320;
 }
 
 form button {
-    background: #b45f2b;
+    background: #2a3f93;
     border: none;
     padding: 12px 20px;
     border-radius: 40px;
     color: white;
     font-weight: bold;
     cursor: pointer;
+    transition: background 0.2s;
+}
+
+form button:hover {
+    background: #121041;
 }
 
 footer {
-    background: #1f2e2b;
-    color: #cfcfc4;
+    background: #121041;
+    color: #c5c5cd;
     padding: 2rem 0;
     text-align: center;
     margin-top: 2rem;
@@ -441,7 +470,7 @@ footer {
     margin: 0 auto 2rem;
     text-align: center;
     font-size: 1.1rem;
-    color: #3e5a5f;
+    color: #39385e;
 }
 
 .about-card ul li {
@@ -461,17 +490,17 @@ footer {
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0,0,0,0.02);
     transition: all 0.25s ease;
-    border: 1px solid #ede6db;
+    border: 1px solid #d8d8e8;
 }
 
 .project-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 24px 36px -12px rgba(0,0,0,0.1);
-    border-color: #e2d2c0;
+    border-color: #7f8cbe;
 }
 
 .project-image {
-    background: linear-gradient(135deg, #f5efe7 0%, #e8dfd3 100%);
+    background: linear-gradient(135deg, #e8e8f5 0%, #d0d0e8 100%);
     height: 180px;
     display: flex;
     align-items: center;
@@ -480,7 +509,7 @@ footer {
 
 .project-image i {
     font-size: 4rem;
-    color: #b45f2b;
+    color: #2a3f93;
     opacity: 0.6;
 }
 
@@ -492,18 +521,18 @@ footer {
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
-    color: #1f3e3f;
+    color: #121041;
 }
 
 .project-content p {
-    color: #3f555b;
+    color: #39385e;
     font-size: 0.95rem;
     margin-bottom: 1rem;
 }
 
 .project-tag {
-    background: #b45f2b20;
-    color: #b45f2b;
+    background: #2a3f9320;
+    color: #2a3f93;
     font-weight: 600;
     font-size: 0.75rem;
     padding: 4px 12px;
@@ -520,7 +549,7 @@ footer {
 
 .client-logo {
     background: white;
-    border: 1px solid #ede6db;
+    border: 1px solid #d8d8e8;
     border-radius: 20px;
     padding: 2rem 1rem;
     display: flex;
@@ -534,18 +563,18 @@ footer {
 .client-logo:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 24px -8px rgba(0,0,0,0.08);
-    border-color: #e2d2c0;
+    border-color: #7f8cbe;
 }
 
 .client-logo i {
     font-size: 3rem;
-    color: #b45f2b;
+    color: #2a3f93;
     opacity: 0.5;
 }
 
 .client-logo span {
     font-size: 0.85rem;
-    color: #6f6a5e;
+    color: #71708d;
     font-weight: 500;
 }
 
