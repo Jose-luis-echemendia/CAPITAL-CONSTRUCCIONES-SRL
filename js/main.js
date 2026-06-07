@@ -1,16 +1,37 @@
 const form = document.getElementById('contactForm');
 if(form) {
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', async function(e) {
         e.preventDefault();
         const nombre = document.getElementById('nombre')?.value.trim();
         const email = document.getElementById('email')?.value.trim();
-        const mensaje = document.getElementById('mensaje')?.value.trim();
+        const status = document.getElementById('formStatus');
+        const button = form.querySelector('button');
         if(!nombre || !email) {
             alert('Por favor, completa tu nombre y correo electrónico.');
             return;
         }
-        alert(`¡Gracias ${nombre}! Hemos recibido tu mensaje. En breve un asesor de Capital Construcciones SRL se comunicará contigo.`);
-        form.reset();
+        button.disabled = true;
+        button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+        try {
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            });
+            if (response.ok) {
+                status.textContent = '¡Gracias! Tu mensaje fue enviado. Te contactaremos pronto.';
+                status.style.color = '#2e7d32';
+                form.reset();
+            } else {
+                status.textContent = 'Hubo un error al enviar. Intenta de nuevo o contáctanos por WhatsApp.';
+                status.style.color = '#c62828';
+            }
+        } catch {
+            status.textContent = 'Error de conexión. Intenta de nuevo.';
+            status.style.color = '#c62828';
+        }
+        button.disabled = false;
+        button.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar consulta';
     });
 }
 

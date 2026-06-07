@@ -73,8 +73,11 @@
 <header>
     <div class="container navbar">
         <div class="logo">
-            <h1>CAPITAL CONSTRUCCIONES <span>SRL</span></h1>
-            <span>Ingeniería · Mantenimiento · Confianza</span>
+            <img src="assets/logo.png" alt="Capital Construcciones SRL Logo">
+            <div class="logo-text">
+                <h1>CAPITAL CONSTRUCCIONES <span>SRL</span></h1>
+                <span>Ingeniería · Mantenimiento · Confianza</span>
+            </div>
         </div>
         <nav class="nav-links" aria-label="Navegación principal">
             <a href="#inicio">Inicio</a>
@@ -363,13 +366,14 @@
                     <div class="elder-badge" style="background:#d9c2a1; color:#2c3e2f;">Especialistas en mantenimiento de edificaciones + eficiencia energética</div>
                 </div>
                 <div>
-                    <form id="contactForm">
-                        <input type="text" id="nombre" placeholder="Nombre completo *" required>
-                        <input type="email" id="email" placeholder="Correo electrónico" required>
-                        <input type="tel" id="telefono" placeholder="Teléfono / WhatsApp">
-                        <textarea rows="4" id="mensaje" placeholder="Cuéntanos tu proyecto: reparación, construcción, climatización, instalación eléctrica o paneles solares..."></textarea>
+                    <form id="contactForm" action="https://formspree.io/f/xojzeowp" method="POST">
+                        <input type="hidden" name="_subject" value="Nueva consulta desde la web de Capital Construcciones">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo *" required>
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono / WhatsApp">
+                        <textarea rows="4" id="mensaje" name="mensaje" placeholder="Cuéntanos tu proyecto: reparación, construcción, climatización, instalación eléctrica o paneles solares..."></textarea>
                         <button type="submit"><i class="fas fa-paper-plane"></i> Enviar consulta</button>
-                        <p style="font-size: 0.75rem; margin-top: 12px;">Recibirás respuesta en máximo 24h laborables.</p>
+                        <p id="formStatus" style="font-size: 0.75rem; margin-top: 12px;">Recibirás respuesta inmediata !!.</p>
                     </form>
                 </div>
             </div>
@@ -379,6 +383,9 @@
 
 <footer>
     <div class="container">
+        <div class="footer-logo">
+            <img src="assets/logo.png" alt="Capital Construcciones SRL">
+        </div>
         <p>CAPITAL CONSTRUCCIONES SRL — Ejecución, conservación, rehabilitación y mantenimiento de edificaciones en Cuba.</p>
         <p style="margin-top: 0.8rem;">✔ Cumplimos las normas NC vigentes | ✔ Reducción de costos y plazos | ✔ Garantía y seguimiento</p>
         <p style="margin-top: 1.5rem; font-size: 0.8rem;">© 2025 Capital Construcciones SRL. Todos los derechos reservados. Soluciones integrales con altos estándares.</p>
@@ -386,7 +393,7 @@
 </footer>
 
 <a href="https://wa.me/5356909881?text=Hola%20Capital%20Construcciones%2C%20necesito%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20construcci%C3%B3n%20y%20mantenimiento." class="whatsapp-float" target="_blank" aria-label="Consulta por WhatsApp">
-    <i class="fab fa-whatsapp"></i> Consulta por WhatsApp
+    <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
 </a>
 
 <script src="js/main.js"></script>
