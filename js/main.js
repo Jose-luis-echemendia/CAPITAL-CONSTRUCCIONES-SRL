@@ -85,3 +85,37 @@ console.log("Landing page Capital Construcciones - servicios integrales en const
 
     timer = setInterval(() => goTo(current + 1), 5000);
 })();
+
+(function() {
+    const navLinks = document.querySelector('.nav-links');
+    const navToggle = document.querySelector('.nav-toggle');
+    if (!navLinks || !navToggle) return;
+
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-open');
+        const icon = navToggle.querySelector('i');
+        if (navLinks.classList.contains('nav-open')) {
+            icon.className = 'fas fa-times';
+        } else {
+            icon.className = 'fas fa-bars';
+        }
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('nav-open');
+            navToggle.querySelector('i').className = 'fas fa-bars';
+        });
+    });
+
+    let lastScroll = 0;
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            navLinks.classList.remove('nav-open');
+            navToggle.querySelector('i').className = 'fas fa-bars';
+        }
+        lastScroll = currentScroll;
+    });
+})();
