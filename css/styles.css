@@ -403,6 +403,10 @@ section {
     display: inline;
 }
 
+.phones-line a:not(:last-child)::after {
+    content: " / ";
+}
+
 form input, form textarea {
     width: 100%;
     padding: 12px 16px;
@@ -480,7 +484,10 @@ footer {
     .hero-text p { max-width: 100%; }
     .contact-info p { word-break: break-word; }
     .phones-line { display: flex; flex-direction: column; gap: 4px; }
+    .phones-line a:not(:last-child)::after { display: none; }
     .phones-line a { display: block; }
+    .contact-label { display: none; }
+    .contact-info h3 { font-size: 1rem; }
 }
 
 .whatsapp-float {
